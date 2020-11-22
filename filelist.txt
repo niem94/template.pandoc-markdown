@@ -1,3 +1,0 @@
-frontmatter/titlepage.md
-mainmatter/introduction.md
-backmatter/bibliography.md
