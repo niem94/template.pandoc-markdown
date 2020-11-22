@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir output
-          echo "::set-env name=FILELIST::$(printf '"%s" ' content/*.md)"
+          echo "FILELIST=$(printf '"%s" ' content/*.md)" >> $GITHUB_ENV
       - uses: docker://pandoc/latex:latest
         with:
           args: -d pandoc_config/defaults.yml --output=output/result.pdf ${{ env.FILELIST }}
