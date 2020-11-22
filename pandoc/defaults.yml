@@ -1,0 +1,17 @@
+#General
+resource-path: ["resources"] # the resource path
+
+#Biblography
+bibliography: [bibliography.bib] # the bibliography files
+citeproc: true # should compile citations
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style
+
+#Generation
+table-of-contents: true #should make toc
+number-sections: true # should number sections
+
+#Includes
+#metadata-files: [pandoc/frontmatter.yml] # Include for a simple title page
+include-before-body: [LaTeX/titlepage.tex] # Include for an advanced title page
+include-after-body: []
+include-in-header: []

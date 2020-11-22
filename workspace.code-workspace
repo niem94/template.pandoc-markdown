@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"pandocMarkdownPreview.extraPandocArguments": "-d ../.pandoc/defaults.yml"
+		"PandocCiter.DefaultBib": "bibliography.bib",
+		"latex-workshop.latex.autoBuild.run": "never"
 	}
 }

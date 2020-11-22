@@ -1,8 +1,0 @@
-bibliography: [../bibliography.bib] # the bibliography files
-citeproc: true # should compile citations
-csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style
-number-sections: true # should number sections
-include-before-body: []
-include-after-body: []
-include-in-header: []
-resource-path: ["../resources"]
