@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: mkdir output
-      - uses: docker://pandoc/latex:2.9
+      - uses: docker://pandoc/latex:latest
         with:
           args: -d pandoc_config/defaults.yml --output=output/result.pdf *.md
       - uses: actions/upload-artifact@master
