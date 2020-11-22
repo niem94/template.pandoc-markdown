@@ -10,7 +10,7 @@ jobs:
       - run: mkdir output
       - uses: docker://pandoc/latex:2.9
         with:
-          args: -d pandoc_config/defaults.yaml --output=output/result.pdf **/*md
+          args: --defaults pandoc_config/defaults.yml --output=output/result.pdf **/*md
       - uses: actions/upload-artifact@master
         with:
           name: output
