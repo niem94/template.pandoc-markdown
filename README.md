@@ -15,4 +15,8 @@ This template provides an easy way to write beautiful documents with Markdown.
 
 You can preview the section you are writing by using the command "Pandoc Markdown Preview".
 
-To build the document write "pandoc -o mydocument.pdf content/*.md" in the terminal.
+## Building the full report
+
+To build the document write "pandoc -o mydocument.pdf content/*.md" in the terminal, or run the included task "pandoc build"
+
+There is currently no smart way to build the full report for the pandoc preview or compiler extension.
