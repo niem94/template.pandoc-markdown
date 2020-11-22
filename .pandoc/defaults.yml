@@ -5,4 +5,4 @@ number-sections: true # should number sections
 include-before-body: []
 include-after-body: []
 include-in-header: []
-resource-path: ["./resources"]
+resource-path: ["../resources"]

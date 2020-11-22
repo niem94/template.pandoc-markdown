@@ -5,7 +5,6 @@
 		}
 	],
 	"settings": {
-		"pandoc.pdfOptString": "-d ../pandoc_config/defaults.yml",
-		"pandocMarkdownPreview.extraPandocArguments": "-d ../pandoc_config/defaults.yml"
+		"pandocMarkdownPreview.extraPandocArguments": "-d ../.pandoc/defaults.yml"
 	}
 }
