@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          mkdir output  # create output dir
+          mkdir output
           echo "::set-env name=FILELIST::$(printf '"%s" ' content/*.md)"
       - uses: docker://pandoc/latex:latest
         with:
