@@ -1,4 +1,22 @@
-\title{Advanced Title Page}
-\maketitle
+\title{\vspace{-4.5cm}\textbf{\Huge Title\\\large Subtitle}\vspace{1cm}\\\large\textbf{Group members}\vspace{-.5cm}}
+\author{
+	\vspace{-1.2cm}\\\makebox[2in]{\hrulefill}\\\normalsize name1 \\\normalsize \href{mailto:mail@mail.com}{mail@mail.com}
+	\and\vspace{-1.2cm}\\\makebox[2in]{\hrulefill}\\\normalsize nam2 \\\normalsize \href{mailto:nidam16@mail@mail.com}{mail@mail.com}}
 
-LaTeX Title Page
+\begin{titlepage}
+	{\let\newpage\relax\maketitle}
+	\setcounter{page}{-1}
+	\begin{center}
+		\large \textbf{Group supervisor} \\
+		\normalsize name3 \\
+		\href{mailto:mail@mail.com}{mail@mail.com}\\
+		\vspace{1cm}
+		%\includegraphics[width=0.2\textwidth]{Resources/Images/sdu}
+
+		\large
+		Faculty\\
+		Organization\\
+		Country\\
+
+	\end{center}
+\end{titlepage}
