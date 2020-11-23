@@ -6,7 +6,7 @@
         {
             "label": "pandoc build",
             "type": "shell",
-            "command": "pandoc -d pandoc/defaults.yml -o output.pdf docs/*.md"
+            "command": "pandoc -d pandoc/defaults.yml --lua-filter pandoc-gls.lua -o output.pdf docs/*.md"
         }
     ]
 }

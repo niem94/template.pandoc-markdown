@@ -12,7 +12,7 @@ jobs:
           echo "FILELIST=$(printf '"%s" ' docs/*.md)" >> $GITHUB_ENV
       - uses: docker://pandoc/latex:latest
         with:
-          args: -d pandoc/defaults.yml --output=output/result.pdf ${{ env.FILELIST }}
+          args: -d pandoc/defaults.yml --lua-filter pandoc-gls.lua -o=output/result.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: output
