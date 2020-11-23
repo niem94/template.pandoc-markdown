@@ -3,11 +3,12 @@ resource-path: ["resources"] # the resource path
 
 #Filters
 filters:
- - pandoc-gls
+ - pandoc-gls.lua
  - pandoc-ac
  - pandoc-plantuml
 
 #Biblography
+citeproc: true
 bibliography: [bibliography.bib] # the bibliography files
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style
 
