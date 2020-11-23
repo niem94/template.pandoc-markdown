@@ -1,5 +1,6 @@
 # Introduction
 
+This template helps you create beautiful pdf from markdown.
 How you make a citation: [@einstein]
 
 How to make Glossaries: <https://github.com/tomncooper/pandoc-gls>
