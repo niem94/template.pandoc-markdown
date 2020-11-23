@@ -1,19 +1,10 @@
----
-# title:  'Title'
-# subtitle: 'Subtitle'
-# author:
-# - Author One
-# - Author Two
-# keywords: [keyword1, keyword2]
-# abstract: |
-#   This is the abstract.
+title:  'Title'
+subtitle: 'Subtitle'
+author:
+- Author One
+- Author Two
+keywords: [keyword1, keyword2]
+abstract: |
+  This is the abstract.
 
-#   It consists of two paragraphs.
-
-header-includes:
-    - \usepackage{glossaries}
-    - \makenoidxglossaries
-    - \input{glossary}
-include-after:
-    - \printnoidxglossary[sort=word]
----
+  It consists of two paragraphs.

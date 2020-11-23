@@ -1,0 +1,6 @@
+header-includes:
+    - \usepackage{glossaries}
+    - \makenoidxglossaries
+    - \input{glossary}
+include-after:
+    - \printnoidxglossary[sort=word]

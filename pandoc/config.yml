@@ -11,7 +11,9 @@ table-of-contents: true #should make toc
 number-sections: true # should number sections
 
 #Includes
-metadata-files: [pandoc/frontmatter.yml] # Include for a simple title page
-include-before-body: [LaTeX/titlepage.tex] # Include for an advanced title page
+metadata-files:
+ - pandoc/preamble.yml
+ - pandoc/frontmatter.yml # Include for a simple title page
+# include-before-body: [LaTeX/titlepage.tex] # Include for an advanced title page
 include-after-body: []
 include-in-header: []
