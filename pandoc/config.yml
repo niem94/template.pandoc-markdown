@@ -3,8 +3,8 @@ resource-path: ["resources"] # the resource path
 
 #Filters
 filters:
- - pandoc-ac
  - pandoc-plantuml
+ - pandoc-ac
  - pandoc-gls.lua
 
 #Biblography
