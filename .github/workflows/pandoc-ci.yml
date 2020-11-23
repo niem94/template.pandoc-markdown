@@ -12,7 +12,6 @@ jobs:
           echo "FILELIST=$(printf '"%s" ' docs/*.md)" >> $GITHUB_ENV
       - uses: docker://nikolaidamm/pandoc-plus:latest
         with:
-          entrypoint: pandoc
           args: -d pandoc/config.yml --output=output/result.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
