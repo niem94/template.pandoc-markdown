@@ -10,7 +10,7 @@ jobs:
       - run: |
           mkdir output
           echo "FILELIST=$(printf '"%s" ' docs/*.md)" >> $GITHUB_ENV
-      - uses: docker://dalibo/pandocker:latest
+      - uses: docker://yacchin1205/pandoc-docker:latest
         with:
           args: -d pandoc/config.yml --lua-filter pandoc-gls.lua -o=output/result.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
