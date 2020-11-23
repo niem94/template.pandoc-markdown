@@ -3,7 +3,7 @@ resource-path: ["resources"] # the resource path
 
 #Filters
 filters:
- - pandoc-gls
+ - pandoc-gls.lua
  - pandoc-ac
  - pandoc-plantuml
 
