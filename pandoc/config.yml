@@ -3,9 +3,9 @@ resource-path: ["resources"] # the resource path
 
 #Filters
 filters:
- - pandoc-gls.lua
  - pandoc-ac
  - pandoc-plantuml
+ - pandoc-gls.lua
 
 #Biblography
 citeproc: true
