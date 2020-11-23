@@ -10,8 +10,7 @@ jobs:
       - run: |
           mkdir output
           echo "FILELIST=$(printf '"%s" ' docs/*.md)" >> $GITHUB_ENV
-      - run: tlmgr install glossaries
-      - uses: docker://valtyr/pandoc:latest
+      - uses: docker://thomasweise/docker-pandoc:latest
         with:
           args: -d pandoc/config.yml --lua-filter pandoc-gls.lua -o=output/result.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
