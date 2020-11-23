@@ -19,3 +19,11 @@ Plural: (+^FOO)
 Capital: (++FOO)
 
 Capital plural: (++^FOO)
+
+$5 + 5$
+
+```csharp
+public void aMethod(){
+    doSomething();
+}
+```
