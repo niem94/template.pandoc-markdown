@@ -11,7 +11,7 @@ jobs:
           mkdir output
           echo "FILELIST=$(printf '"%s" ' docs/*.md)" >> $GITHUB_ENV
       - uses: xu-cheng/latex-action@v2
-      - uses: docker://pandoc/latex:latest
+      - uses: docker://valtyr/pandoc:latest
         with:
           args: -d pandoc/config.yml --lua-filter pandoc-gls.lua -o=output/result.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
