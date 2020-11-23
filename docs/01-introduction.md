@@ -27,3 +27,12 @@ public void aMethod(){
     doSomething();
 }
 ```
+
+```plantuml
+@startuml test
+class AClass
+class BClass
+
+AClass --> BClass
+@enduml
+```

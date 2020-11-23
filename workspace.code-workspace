@@ -6,6 +6,10 @@
 	],
 	"settings": {
 		"PandocCiter.DefaultBib": "bibliography.bib",
-		"latex-workshop.latex.autoBuild.run": "never"
+		"triggerTaskOnSave.tasks": {
+			"pandoc build": [
+				"docs/*.md"
+			],
+		}
 	}
 }
