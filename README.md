@@ -11,10 +11,6 @@ This template provides an easy way to write beautiful documents with Markdown.
    2. Open the workspace for a repository created from the template.
 4. Write your document!
 
-## Suggestions if VSCode is used
-
-You can preview the section you are writing by using the command "Pandoc Markdown Preview".
-
 ## Building the full report
 
 To build the document write "pandoc -o mydocument.pdf content/*.md" in the terminal, or run the included task "pandoc build"
