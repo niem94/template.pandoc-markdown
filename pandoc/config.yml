@@ -3,7 +3,6 @@ resource-path: ["resources"] # the resource path
 
 #Biblography
 bibliography: [bibliography.bib] # the bibliography files
-citeproc: true # should compile citations
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style
 
 #Generation

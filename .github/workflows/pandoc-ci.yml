@@ -13,7 +13,7 @@ jobs:
       - uses: docker://thomasweise/docker-pandoc:latest
         with:
           entrypoint: pandoc
-          args: --filter pandoc-citeproc -d pandoc/config.yml  --lua-filter pandoc-gls.lua --output=output/result.pdf ${{ env.FILELIST }}
+          args: -d pandoc/config.yml --filter pandoc-citeproc --lua-filter pandoc-gls.lua --output=output/result.pdf ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: output
