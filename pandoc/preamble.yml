@@ -1,7 +1,0 @@
-header-includes:
-    - \usepackage{glossaries}
-    - \makenoidxglossaries
-    - \input{glossary}
-    - \hypersetup{pdfpagemode=UseNone}
-include-after:
-    - \printnoidxglossary[sort=word]

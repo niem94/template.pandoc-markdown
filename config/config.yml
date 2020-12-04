@@ -3,13 +3,13 @@ resource-path: ["resources"] # the resource path
 
 #Filters
 filters:
- - pandoc-plantuml
- - pandoc-ac
- - pandoc-gls.lua
+  - pandoc-plantuml
+  - pandoc-ac
+  - pandoc-gls.lua
 
 #Biblography
 citeproc: true
-bibliography: [bibliography.bib] # the bibliography files
+bibliography: [resources/LaTeX/bibliography.bib] # the bibliography files
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style
 
 #Generation
@@ -18,7 +18,7 @@ number-sections: true # should number sections
 
 #Includes
 metadata-files:
- - pandoc/preamble.yml
+  - config/preamble.yml
 # - pandoc/frontmatter.yml # Include for a simple title page
 include-before-body: [LaTeX/titlepage.tex] # Include for an advanced title page
 include-after-body: []
