@@ -5,7 +5,7 @@ How you make a citation: [@einstein]
 
 How to make Glossaries: <https://github.com/tomncooper/pandoc-gls>
 
-<!-- Glossary: (+FOO)
+Glossary: (+FOO)
 
 Acronym first time: (+BAR)
 
@@ -19,9 +19,9 @@ Plural: (+^FOO)
 
 Capital: (++FOO)
 
-Capital plural: (++^FOO) -->
+Capital plural: (++^FOO)
 
-$5 + 5$
+$5 + 5 \over 2$
 
 ```csharp
 public void aMethod(){

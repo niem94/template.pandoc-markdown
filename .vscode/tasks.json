@@ -7,6 +7,7 @@
             "type": "docker-run",
             "label": "build document",
             "dockerRun": {
+                "containerName": "pandoc-plus",
                 "image": "nikolaidamm/pandoc-plus:latest",
                 "customOptions": "--user `id -u`:`id -g`",
                 "command": "-d config/config.yml -o ${workspaceFolderBasename}.pdf content/*.md",
@@ -15,8 +16,18 @@
                         "localPath": "${workspaceFolder}",
                         "containerPath": "/data"
                     }
-                ]
-            }
+                ],
+                "remove": true,
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "isBackground": true
         },
     ]
 }
