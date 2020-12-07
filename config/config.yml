@@ -1,25 +1,23 @@
 #General
 resource-path: ["resources"] # the resource path
-
-#Filters
 filters:
-  - pandoc-plantuml
-  - pandoc-ac
-  - pandoc-gls.lua
+  - filters/diagram-generator.lua
+  - filters/pandoc-gls.lua
+#   - pandoc-ac
 
 #Biblography
 citeproc: true
-bibliography: [resources/LaTeX/bibliography.bib] # the bibliography files
-csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style
+bibliography: [bibliography.bib] # the bibliography files
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl # the citation style (change *.csl to target another style)
 
 #Generation
-table-of-contents: true #should make toc
-number-sections: true # should number sections
+table-of-contents: true
+number-sections: true
 
 #Includes
 metadata-files:
   - config/preamble.yml
-# - pandoc/frontmatter.yml # Include for a simple title page
+# - config/frontmatter.yml # Include for a simple title page
+include-in-header: []
 include-before-body: [LaTeX/titlepage.tex] # Include for an advanced title page
 include-after-body: []
-include-in-header: []

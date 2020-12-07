@@ -10,6 +10,7 @@
 			"pandoc build": [
 				"docs/*.md"
 			],
-		}
+		},
+		"latex-workshop.latex.autoBuild.run": "never"
 	}
 }

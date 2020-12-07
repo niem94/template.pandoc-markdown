@@ -4,10 +4,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "pandoc build",
-            "type": "shell",
-            "command": "pandoc -d config/config.yml -o ${workspaceFolderBasename}.pdf content/*.md",
-            "problemMatcher": []
-        }
+            "type": "docker-run",
+            "label": "build document",
+            "dockerRun": {
+                "image": "nikolaidamm/pandoc-plus:latest",
+                "customOptions": "--user `id -u`:`id -g`",
+                "command": "-d config/config.yml -o ${workspaceFolderBasename}.pdf content/*.md",
+                "volumes": [
+                    {
+                        "localPath": "${workspaceFolder}",
+                        "containerPath": "/data"
+                    }
+                ]
+            }
+        },
     ]
 }
