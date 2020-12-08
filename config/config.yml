@@ -3,7 +3,6 @@ resource-path: ["resources"] # the resource path
 filters:
   - filters/diagram-generator.lua
   - filters/pandoc-gls.lua
-#   - pandoc-ac
 
 #Biblography
 citeproc: true
@@ -13,6 +12,10 @@ csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa
 #Generation
 table-of-contents: true
 number-sections: true
+variables:
+  documentclass: article
+  geometry:
+    - margin=1in
 
 #Includes
 metadata-files:
